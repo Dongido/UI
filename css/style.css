@@ -1,0 +1,431 @@
+@charset "UTF-8";
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,500,600,700");
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?j52xrp");
+  src: url("../fonts/icomoon.eot?j52xrp#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?j52xrp") format("truetype"), url("../fonts/icomoon.woff?j52xrp") format("woff"), url("../fonts/icomoon.svg?j52xrp#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+a span{
+  font-family: "Raleway", sans-serif;
+}
+hr{
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.fa-newspaper{
+  color: #1C33F5;
+}
+.fa-user-plus{
+  color: #55CC15;
+}
+.fa-user-slash{
+  color: #F0D913;
+}
+.fa-address-book{
+  color: #C815EC;
+}
+.fa-list-ol{
+  color: #EC159B;
+}
+.fa-user-times{
+  color: #F52A45;
+}
+
+.sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 0px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.sidebar h4 {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #111;
+  display: block;
+  transition: 0.3s;
+  margin-top: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #111;
+  display: block;
+  transition: 0.3s;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 1px;
+  font-size: 26px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  position:absolute;
+  left:0;
+  top:0;
+  font-size: 32px;
+  cursor: pointer;
+  background-color: #fff;
+  color: #000; 
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+.sidebar .sidebar_header{
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  text-align: left;
+  padding-left: 15px;
+  padding-bottom: 3px;
+  margin-bottom: 60px;
+}
+.sidebar .sidebar_header h2{
+  font-size: 30px;
+  color: #EE4327;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.sidebar .sidebar_header h5{
+  font-size: 12px;
+  color: #818181;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 0;
+  padding-left: 15px;
+  margin-left:238px;
+  margin-top: 0;
+}
+#Top_nav{
+  height: 30px;
+  padding: 5px;  
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+
+}
+#Top_nav .avatar{
+  position: relative;
+  height: auto;
+  width: auto;
+  border: :none;
+}
+#Top_nav .avatar img{
+  width: 27px;
+  height: 27px;
+  border-radius: 15px 15px 15px 15px;
+}
+#Top_nav span .user{
+  font-size: 14px;
+}
+#Top_nav span .far{
+  font-size: 24px;
+  margin-right: 3px;
+}
+#Top_nav span {
+  float: right;
+  padding-right: 15px;
+  padding-top: 2px;
+}
+
+#content{
+  padding: 30px;
+  width: 100%;
+}
+.overview{
+  width: 100%;
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-around;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.overview .item{
+  -webkit-flex-basis: 25%;
+  -moz-flex-basis: 25%;
+  -ms-flex-basis: 25%;
+  flex-basis: 25%;
+  padding: 15px 0;
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.05);
+  text-align: left;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-color: #fff;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.overview .item .desc {
+  clear: both;
+}
+.overview .item .image{
+  margin-bottom: 5px;
+}
+.overview .item .image span .green{
+  color: #04B614;
+  font-size: 22px;
+}
+.overview .item .desc .green{
+  background-color: #DEFCCB;
+  color: #04B614;
+  padding: 2px;
+  border-radius: 8px 8px 8px 8px;
+}
+.overview .item .image span .purple{
+  color: #DC0ADC;
+  font-size: 22px;
+}
+.overview .item .desc .purple{
+  background-color: #EACCFB;
+  color: #DC0ADC;
+  padding: 2px;
+  border-radius: 8px 8px 8px 8px;
+}
+.overview .item .image span .pink{
+  color: #F97813;
+  font-size: 22px;
+}
+.overview .item .desc .pink{
+  background-color: #FDE8D8;
+  color: #F97813;
+  padding: 2px;
+  border-radius: 8px 8px 8px 8px;
+}
+.overview .item .desc .label{
+  float: left;
+  font-size: 16px;
+  font-weight: 600;
+  color: #818181;
+}
+.overview .item .desc .value{
+  float: right;
+  font-size: 14px;
+  font-weight: 600;
+}
+/*----------dASHBOARD CHART--------------*/
+
+#wrapper h3 {
+  caption-side: top; 
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  position: relative; 
+  z-index: 10;
+  font-weight: 700;
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
+.wrapper{
+  position: relative;
+  margin-left: 60px;
+  overflow-x:scroll;
+  width: 100%;
+  height: 400px;
+}
+#q-graph {
+  display: block; /* fixes layout wonkiness in FF1.5 */
+  position: relative; 
+  width: 70%; 
+  height: 320px;
+  margin: 1.1em 0 0; 
+  padding: 0;
+  background: transparent;
+  font-size: 11px;
+  margin-left: 90px;
+}
+
+#q-graph tr, #q-graph th, #q-graph td { 
+  position: absolute;
+  bottom: 0; 
+  width: 150px; 
+  z-index: 2;
+  margin: 0; 
+  padding: 0;
+  text-align: center;
+}
+
+#q-graph td {
+  transition: all .3s ease;
+  
+  &:hover {
+    background-color: desaturate(#85144b, 100);
+    opacity: .9;
+    color: white;
+  }
+}
+  
+#q-graph thead tr {
+  left: 100%; 
+  top: 50%; 
+  bottom: auto;
+  margin: -2.5em 0 0 5em;
+}
+#q-graph thead th {
+  width: 7.5em; 
+  height: auto; 
+  padding: 0.5em 1em;
+}
+#q-graph thead th.sent {
+  top: 0; 
+  left: 0; 
+  line-height: 2;
+}
+#q-graph thead th.paid {
+  top: 2.75em; 
+  line-height: 2;
+  left: 0; 
+}
+
+#q-graph tbody tr {
+  height: 300px;
+  padding-top: 2px;
+  border-right: 1px dotted #C4C4C4; 
+  color: #AAA;
+}
+#q-graph #q1 {
+  left: 0;
+}
+#q-graph #q2 {left: 150px;}
+#q-graph #q3 {left: 300px;}
+#q-graph #q4 {left: 450px; border-right: none;}
+#q-graph tbody th {bottom: -1.75em; vertical-align: top;
+font-weight: normal; color: #333;}
+#q-graph .bar {
+  width: 60px; 
+  border: 1px solid; 
+  border-bottom: none; 
+  color: #000;
+}
+#q-graph .bar p {
+  margin: 5px 0 0; 
+  padding: 0;
+  opacity: .7;
+}
+#q-graph .sent {
+  left: 13px; 
+  background-color: #0CC93C;
+  border-color: transparent;
+}
+#q-graph .paid {
+  left: 77px; 
+  background-color: #DC6B0D;
+  border-color: transparent;
+}
+
+
+#ticks {
+  position: relative; 
+  top: -300px; 
+  left: 2px;
+  width: 30%; 
+  height: 300px; 
+  z-index: 1;
+  margin-bottom: -300px;
+  font-size: 10px;
+  font-family: "fira-sans-2", Verdana, sans-serif;
+}
+
+#ticks .tick {
+  position: relative; 
+  border-bottom: 1px dotted #C4C4C4; 
+  width: 600px;
+}
+
+#ticks .tick p {
+  position: absolute; 
+  left: 0em; 
+  top: 0em; 
+  margin: 0 0 0 0.5em;
+}
+
+/*--------RESPOSIVE DESIGN-----------*/
+
+@media screen and (max-width: 600px) {
+  .overview .item{
+    -webkit-flex-basis: 100%;
+    -moz-flex-basis: 100%;
+    -ms-flex-basis: 100%;
+    flex-basis: 100%;
+  }
+  #main {
+    margin-left:0px; 
+    padding-left: 0;
+ }
+ .sidebar {
+    height: auto;
+    width: 0px;
+  }
+  #content{
+    padding-left: 0px;
+  }
+  .wrapper{
+    margin-left: 10px;
+  }
+  #q-graph {
+   width: 100%; 
+  }
+  #ticks {
+    width: 100%; 
+  }
+
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
