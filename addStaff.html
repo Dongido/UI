@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+          crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+
+    <div id="mySidebar" class="sidebar">
+        <div class="sidebar_header">
+            <h2>Banka</h2>
+            <h5>Admin Dashboard</h5>
+        </div>
+
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-th-list"></i></a>
+        <a href="dashboard.html"> <i class="far fa-newspaper"></i> Dashboard</a>
+        <h4>Operations</h4>
+        <a href="addStaff.html"><i class="fas fa-user-plus"></i> Add New Admin/Staff</a>
+        <a href="#"><i class="fas fa-user-slash"></i> Activate/Deactivate User</a>
+        <h4>Account</h4>
+        <a href="#"><i class="far fa-address-book"></i> View Accounts</a>
+        <a href="#"><i class="fas fa-list-ol"></i> View user account</a>
+        <a href="#"><i class="fas fa-user-times"></i> Delete account</a>
+
+    </div>
+
+    <div id="main">
+        <nav id="Top_nav">
+            <div>
+                <span> <i class="user">Gideon Nweke</i> </span>
+                <span class="avatar"><img src="images/avatar.png"></span>
+                <span> <i class="far fa-bell"></i> </span>
+                <div style="clear:both"></div>
+            </div>
+        </nav>
+
+        <button class="openbtn" onclick="openNav()"><i class="fas fa-th-list"></i> </button>
+
+        <section id="content">
+            <div class="overview">
+                <div class="item">
+                    <div class="image">
+                        <span><i class="fas fa-users green"></i></span>
+                    </div>
+                    <div class="desc">
+                        <span class="label">Total Clients</span>
+                        <span class="value green">23,903</span>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="image">
+                        <span><i class="fas fa-money-check purple"></i></span>
+                    </div>
+                    <div class="desc">
+                        <span class="label">Daily Withdrawals</span>
+                        <span class="value purple">NGN 89,092,700</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image">
+                        <span><i class="far fa-money-bill-alt pink"></i></span>
+                    </div>
+                    <div class="desc">
+                        <span class="label">Daily Deposit</span>
+                        <span class="value pink">NGN 52,093,000</span>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div id="accounts">
+                <div class="center-box">
+
+                    <div class="accounts">
+                        <div class="tab-wrapper">
+                            <ul class="tab">
+                                <li>Add Staff/Admin</li>
+                            </ul>
+                            <div class="accounts-tab">
+                                <form>
+                                    <fieldset>
+                                        <div class="form-title">
+                                            <h3>Create new staff account</h3>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-col">
+                                                <label>First Name</label>
+                                                <input type="text" placeholder="First Name" />
+                                            </div>
+                                            <div class="form-col">
+                                                <label>Last Name</label>
+                                                <input type="text" placeholder="First Name" />
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-col">
+                                                <label>Email ID</label>
+                                                <input type="text" placeholder="Email ID" />
+                                            </div>
+                                            <div class="form-col">
+                                                <label>Contact No</label>
+                                                <input type="text" placeholder="Contact No" />
+                                            </div>
+                                            <div class="form-col">
+                                                <label>User Role</label>
+                                                <select>
+                                                    <option>Select Staff Role</option>
+                                                    <option>Admin</option>
+                                                    <option>Staff</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-col">
+                                                <label>Country</label>
+                                                <select>
+                                                    <option>Select Country</option>
+                                                    <option>United States of America</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-col">
+                                                <label>State</label>
+                                                <select>
+                                                    <option>Select State</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-col">
+                                                <label>City</label>
+                                                <select>
+                                                    <option>Select City</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-col">
+                                                <label>Residential Address</label>
+                                                <textarea placeholder="Address"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-col">
+                                                <button type="submit" class="title">Create Staff</button>
+                                            </div>
+                                        </div>
+
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "30px";
+        }
+    </script>
+
+</body>
+</html>
