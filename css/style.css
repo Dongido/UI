@@ -392,7 +392,205 @@ font-weight: normal; color: #333;}
   top: 0em; 
   margin: 0 0 0 0.5em;
 }
-           
+
+/*--------ACCOUNTS FORM--------*/
+#accounts {
+  padding: 50px 0;
+  width: 100%;
+}
+        #accounts .tab {
+            margin: 0;
+            list-style: none;
+            padding: 0;
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            }
+
+            #accounts .tab li {
+                display: block;
+                padding: 10px;
+                background: #21A1C6;
+                color: #fff;
+                border-radius: 10px 10px 0 0;
+                font-size: 14px;
+                margin-right: 10px;
+            }
+
+            #accounts .accounts {
+                display: -webkit-box;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+            }
+
+            #accounts .accounts h4 {
+                font-weight: 700;
+            }
+
+            #accounts .accounts .tab-wrapper {
+                width: 65%;
+            }
+            #accounts .accounts .accounts-tab {
+                width: 100%;
+                padding: 20px 20px;
+                -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+                -moz-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+                box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+                -moz-border-radius: 0 10px 10px 10px;
+                -webkit--radius: 0 10px 10px 10px;
+                border-radius: 0 10px 10px 10px;
+                background-color: #fff;
+            }
+            #accounts .accounts .accounts-tab .sim-item {
+                background: rgba(0, 0, 0, 0.01);
+                padding: 10px;
+                padding-top: 0;
+                margin-bottom: 20px;
+                -moz-border-radius: 10px;
+                -webkit--radius: 10px;
+                border-radius: 10px;
+            }
+            #accounts .accounts .accounts-tab .title {
+                display: inline-block;
+                background: #21A1C6;
+                color: #fff;
+                padding: 10px;
+                margin-top: 0;
+                margin-bottom: 10px;
+                font-size: 13px;
+                font-weight: 700;
+                border: none;
+                cursor: pointer;
+            }
+            #accounts .accounts fieldset {
+                border: none;
+                background: none;
+                width: 100%;
+            }
+            #accounts .accounts fieldset .form-title {
+                display: block;
+                width: 100%;
+                padding: 10px 0;
+            }
+            #accounts .accounts fieldset .form-title h3 {
+                font-size: 14px;
+                font-weight: 700;
+            }
+            #accounts .accounts .form-row {
+                display: -webkit-box;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                margin: 10px 0;
+                margin-bottom: 20px;
+            }
+
+            #accounts .accounts .form-row .form-col {
+                -webkit-flex-basis: 50%;
+                -moz-flex-basis: 50%;
+                -ms-flex-basis: 50%;
+                flex-basis: 50%;
+                padding-right: 30px;
+                -webkit-box-flex: 1;
+                -moz-box-flex: 1;
+                -webkit-flex: 1;
+                -ms-flex: 1;
+                flex: 1;
+            }
+            #accounts .accounts .form-row .form-col label {
+                display: block;
+                margin-bottom: 10px;
+                font-size: 14px;
+            }
+            #accounts .accounts .form-row .form-col input[type=text], #accounts .accounts .form-row .form-col input[type=range], #accounts .accounts .form-row .form-col input[type=number], #accounts .accounts .form-row .form-col select, #accounts .accounts .form-row .form-col textarea {
+                padding: 10px;
+                width: 100%;
+                border: 1px solid rgba(0, 0, 0, 0.05);
+                background: rgba(0, 0, 0, 0.03);
+                font-size: 14px;
+                outline: none;
+                -moz-border-radius: 3px;
+                -webkit--radius: 3px;
+                border-radius: 3px;
+            }
+            #accounts .accounts .form-row .form-col textarea {
+                height: 60px;
+            }
+            #accounts .accounts .form-row .form-col .validate-box {
+                width: 100%;
+                display: -webkit-box;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+            }
+            #accounts .accounts .form-row .form-col .validate-box .col-left {
+                width: 100px;
+            }
+            #accounts .accounts .form-row .form-col .validate-box .col-left select {
+                width: 100%;
+            }
+            #accounts .accounts .form-row .form-col .validate-box .col-right {
+                margin-left: 10px;
+            }
+            #accounts .accounts .form-row .form-col .btn-alt {
+                padding: 10px;
+                font-size: 13px;
+                background: none;
+                border: 2px solid #21A1C6;
+                margin-top: 10px;
+                color: #21A1C6;
+                -webkit-transition: 0.2s ease-out;
+                transition: 0.2s ease-out;
+            }
+
+            #accounts .accounts .form-row .form-col .btn-alt:hover {
+                background: #21A1C6;
+                color: #fff;
+            }
+
+
+/*--------RESPOSIVE DESIGN-----------*/
+@media only screen and (max-width: 1200px) {
+  #accounts .accounts .form-row {
+    display: block;
+    margin: 10px 0;
+  }
+  #accounts .accounts .form-row .form-col {
+    margin: 10px 0;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  #accounts .accounts .tab-wrapper {
+    width: 90%;
+  }
+  #accounts .accounts .form-row {
+    display: block;
+    margin: 10px 0;
+  }
+  #accounts .accounts .form-row .form-col {
+    margin: 10px 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #accounts .accounts {
+    display: block;
+  }
+  #accounts .accounts .tab-wrapper {
+    margin: 20px auto;
+    width: 90%;
+  }
+}
 @media screen and (max-width: 600px) {
   .overview .item{
     -webkit-flex-basis: 100%;
