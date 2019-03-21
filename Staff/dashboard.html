@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" 
+crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+
+<div id="mySidebar" class="sidebar">
+  <div class="sidebar_header">
+    <h2>Banka</h2>
+    <h5>Staff Dashboard</h5>
+  </div>
+  
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-th-list"></i></a>
+  <a href="dashboard.html"> <i class="far fa-newspaper"></i> Dashboard</a>
+  <h4>Operations</h4>
+  <a href="#"><i class="fas fa-cash-register"></i> Credit User account</a>
+  <a href="#"><i class="fas fa-file-invoice-dollar"></i> Debit User account</a>
+  <h4>Bank Account</h4>
+  <a href="bankAccounts.html"><i class="far fa-address-book"></i> View Accounts</a>
+  <a href="deletedAccounts.html"><i class="fas fa-user-times"></i> Deleted accounts</a>
+
+</div>
+
+<div id="main">
+  <nav id="Top_nav">
+    <div>
+      <span> <i class="user">Grace Ayodele</i> </span>
+      <span class="avatar"><img src="../images/avatar.png"></span>
+      <span> <i class="far fa-bell"></i> </span>     
+      <div style="clear:both"></div>
+    </div>
+  </nav>
+
+  <button class="openbtn" onclick="openNav()"><i class="fas fa-th-list"></i> </button>  
+  
+  <section id="content">
+    <div class="overview">
+      <div class="item">
+        <div class="image">
+          <span><i class="fas fa-hand-holding-usd green"></i></span>
+        </div>
+        <div class="desc">
+          <span class="label">Credit Amount</span>
+          <span class="value green">1,890,200</span>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="image">
+          <span><i class="fas fa-hand-holding-usd red flip"></i></span>
+        </div>
+        <div class="desc">
+          <span class="label">Debit Amount</span>
+          <span class="value red">NGN 409,700</span>
+        </div>
+      </div>
+      <div class="item">
+        <div class="image">
+          <span><i class="far fa-money-bill-alt pink"></i></span>
+        </div>
+        <div class="desc">
+          <span class="label">Total Income</span>
+          <span class="value pink">NGN 1,480,500</span>
+        </div>
+      </div>
+    </div>
+    <hr/>
+    <div id="wrapper">
+      <h3>2019 Monthly Report</h3>
+      <div class="wrapper"> 
+      <table id="q-graph">
+      <thead>
+      <tr>
+      <th></th>
+      <th class="sent">Deposit</th>
+      <th class="paid">Withdrawer</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr class="qtr" id="q1">
+      <th scope="row">JAN</th>
+      <td class="sent bar" style="height: 111px;"><p>NGN 20,018,450</p></td>
+      <td class="paid bar" style="height: 99px;"><p>NGN 16,500,940</p></td>
+      </tr>
+      <tr class="qtr" id="q2">
+      <th scope="row">FEB</th>
+      <td class="sent bar" style="height: 206px;"><p>NGN 34,340,200</p></td>
+      <td class="paid bar" style="height: 194px;"><p>NGN 27,340,900</p></td>
+      </tr>
+      <tr class="qtr" id="q3">
+      <th scope="row">MAR</th>
+      <td class="sent bar" style="height: 259px;"><p>NGN 43,145,670</p></td>
+      <td class="paid bar" style="height: 193px;"><p>NGN 32,225,905</p></td>
+      </tr>
+      <!--<tr class="qtr" id="q4">
+      <th scope="row">Q4</th>
+      <td class="sent bar" style="height: 110px;"><p>$18,415.96</p></td>
+      <td class="paid bar" style="height: 195px;"><p>$32,425.00</p></td>
+      </tr> -->
+      </tbody>
+      </table>
+
+      <div id="ticks">
+      <div class="tick" style="height: 59px;"><p>N50,000,000</p></div>
+      <div class="tick" style="height: 59px;"><p>N40,000,000</p></div>
+      <div class="tick" style="height: 59px;"><p>N30,000,000</p></div>
+      <div class="tick" style="height: 59px;"><p>N20,000,000</p></div>
+      <div class="tick" style="height: 59px;"><p>N10,000,000</p></div>
+      </div>
+    </div>
+    </div> 
+  </section>
+  
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "30px";
+}
+</script>
+   
+</body>
+</html> 
