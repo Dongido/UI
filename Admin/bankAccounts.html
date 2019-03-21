@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" 
+crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+
+<div id="mySidebar" class="sidebar">
+  <div class="sidebar_header">
+    <h2>Banka</h2>
+    <h5>Admin Dashboard</h5>
+  </div>
+  
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-th-list"></i></a>
+  <a href="dashboard.html"> <i class="far fa-newspaper"></i> Dashboard</a>
+  <h4>Operations</h4>
+  <a href="addStaff.html"><i class="fas fa-user-plus"></i> Add New Admin/Staff</a>
+  <a href="adminControl.html"><i class="fas fa-user-slash"></i> Activate/Deactivate User</a>
+  <h4>Bank Account</h4>
+  <a href="bankAccounts.html"><i class="far fa-address-book"></i> View Accounts</a>
+  <a href="deletedAccounts.html"><i class="fas fa-user-times"></i> Deleted accounts</a>
+
+</div>
+
+<div id="main">
+  <nav id="Top_nav">
+    <div>
+      <span> <i class="user">Gideon Nweke</i> </span>
+      <span class="avatar"><img src="images/avatar.png"></span>
+      <span> <i class="far fa-bell"></i> </span>     
+      <div style="clear:both"></div>
+    </div>
+  </nav>
+
+  <button class="openbtn" onclick="openNav()"><i class="fas fa-th-list"></i> </button>  
+  
+  <section id="content">
+    <div class="overview">
+      <div class="item">
+        <div class="image">
+          <span><i class="fas fa-users green"></i></span>
+        </div>
+        <div class="desc">
+          <span class="label">Total Clients</span>
+          <span class="value green">23,903</span>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="image">
+          <span><i class="fas fa-money-check purple"></i></span>
+        </div>
+        <div class="desc">
+          <span class="label">Daily Withdrawals</span>
+          <span class="value purple">NGN 89,092,700</span>
+        </div>
+      </div>
+      <div class="item">
+        <div class="image">
+          <span><i class="far fa-money-bill-alt pink"></i></span>
+        </div>
+        <div class="desc">
+          <span class="label">Daily Deposit</span>
+          <span class="value pink">NGN 52,093,000</span>
+        </div>
+      </div>
+    </div>
+    <hr/>
+    <div id="wrapper" class="wrap_cont">
+       <h3>Customers account Details</h3>
+	   <div class="users-list">
+			<table>
+				<thead>
+				  <tr>
+					  <th>A/c No.</th>
+					  <th>Name</th>
+					  <th>Branch</th>
+					  <th>Type</th>
+					  <th>BVN</th>
+					  <th>Manager</th>
+				  </tr>
+				</thead>
+				 <tbody>
+				 <tr>
+					 <td><a href="personalBankAccount.html">7778293993</a></td>
+					 <td>Ayo George</td>
+					 <td>Festac Lagos</td>
+					 <td>Savings</td>
+					 <td>763833782892</td>
+					 <td>Mary Richard</td>
+				   </tr>
+				   <tr>
+					  <td><a href="personalBankAccount.html">7702983829</a></td>
+					  <td>Daniel Eze</td>
+					  <td>Ikorodu Lagos</td>
+					  <td>Savings</td>
+					  <td>897833782890</td>
+					  <td>Dele Samuel</td>
+				   </tr>
+				   <tr>
+						<td><a href="personalBankAccount.html">7744039333</a></td>
+						<td>Yvonne Okeke</td>
+						<td>Lekki I Lagos</td>
+						<td>Current</td>
+						<td>093833782877</td>
+						<td>Olatunji Kuku</td>
+				   </tr>
+				    <tr>
+						<td><a href="personalBankAccount.html">7790983993</a></td>
+						<td>Gideon Nweke</td>
+						<td>Ketu Lagos</td>
+						<td>Domiciliary</td>
+						<td>573833782800</td>
+						<td>Tina Kunle</td>
+				   </tr>
+				   <tr>
+				        <td><a href="personalBankAccount.html">7734873943</a></td>
+						<td>Glory Gabriel</td>
+						<td>Ikeja Lagos</td>
+						<td>Savings</td>
+						<td>893833782862</td>
+						<td>Okon Innocent</td>
+				   </tr>
+				 </tbody>
+			</table>
+	   </div>
+    </div> 
+  </section>
+  
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "30px";
+}
+</script>
+   
+</body>
+</html> 
