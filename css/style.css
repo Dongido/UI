@@ -28,6 +28,9 @@ h1, h2, h3, h4, h5, h6 {
 a span{
   font-family: "Raleway", sans-serif;
 }
+th{
+  font-family: "Raleway", sans-serif;
+}
 hr{
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -142,12 +145,13 @@ hr{
   margin-top: 0;
 }
 #Top_nav{
-  height: 30px;
-  padding: 5px;  
+  height: 30px;  
   width: 100%;
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.2);
-
+  padding-top: 5px;
+  padding-bottom:3px;
+  margin-bottom:10px;
 }
 #Top_nav .avatar{
   position: relative;
@@ -170,11 +174,10 @@ hr{
 #Top_nav span {
   float: right;
   padding-right: 15px;
-  padding-top: 2px;
 }
 
 #content{
-  padding: 30px;
+
   width: 100%;
 }
 .overview{
@@ -197,16 +200,20 @@ hr{
   -ms-flex-basis: 25%;
   flex-basis: 25%;
   padding: 15px 0;
-  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.05);
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.05);
   text-align: left;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   -webkit-transition: 0.3s;
   transition: 0.3s;
   background-color: #fff;
   padding-left: 10px;
   padding-right: 10px;
+  
+  -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+  -moz-border-radius: 0 10px 10px 10px;
+  -webkit--radius: 0 10px 10px 10px;
+  border-radius: 0 10px 10px 10px;
 }
 .overview .item .desc {
   clear: both;
@@ -267,8 +274,12 @@ hr{
   font-weight: 700;
   font-size: 20px;
   font-family: "Raleway", sans-serif;
-  text-align: center;
+  text-align: left;
   margin-top: 50px;
+  margin-bottom: 15px;
+  margin-left:20px;
+  max-width:400px
+
 }
 .wrapper{
   position: relative;
@@ -396,7 +407,8 @@ font-weight: normal; color: #333;}
 /*--------ACCOUNTS FORM--------*/
 #accounts {
   padding: 50px 0;
-  width: 100%;
+  width: 90%;
+  margin:auto;
 }
         #accounts .tab {
             margin: 0;
@@ -412,7 +424,7 @@ font-weight: normal; color: #333;}
             #accounts .tab li {
                 display: block;
                 padding: 10px;
-                background: #21A1C6;
+                background: #287AB5;
                 color: #fff;
                 border-radius: 10px 10px 0 0;
                 font-size: 14px;
@@ -458,7 +470,7 @@ font-weight: normal; color: #333;}
             }
             #accounts .accounts .accounts-tab .title {
                 display: inline-block;
-                background: #21A1C6;
+                background: #287AB5;
                 color: #fff;
                 padding: 10px;
                 margin-top: 0;
@@ -467,6 +479,11 @@ font-weight: normal; color: #333;}
                 font-weight: 700;
                 border: none;
                 cursor: pointer;
+            }
+			#accounts .accounts .accounts-tab .title:hover {
+                background: #fff;
+                color: #287AB5;
+				border: 1px solid #287AB5
             }
             #accounts .accounts fieldset {
                 border: none;
@@ -558,6 +575,126 @@ font-weight: normal; color: #333;}
                 color: #fff;
             }
 
+/*-----ADMIN CONTROLS------*/
+#wrapper .filter-box {
+	  background: #fff;
+	  padding: 10px;
+	  margin-top:20px;
+	  -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+      -moz-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+      -moz-border-radius: 0 10px 10px 0px;
+      -webkit--radius: 0 10px 10px 0px;
+      border-radius: 0 10px 10px 0px;
+	}
+	.wrap_cont{
+		width:95%;
+	}
+	#wrapper .filter-box .sort-box {
+	  width: 130px;
+	  position: relative;
+	  border: 1px solid rgba(0, 0, 0, 0.1);
+	  -moz-border-radius: 10px;
+	  -webkit--radius: 10px;
+	  border-radius: 10px;
+	  overflow: hidden;
+	  cursor: pointer;
+	}
+	#wrapper .filter-box .sort-box .title {
+	  position: relative;
+	  padding: 5px;
+	  padding-left: 10px;
+	  display: block;
+	}
+	#wrapper .filter-box .sort-box .icon {
+	  position: absolute;
+	  display: block;
+	  background: #D8D8D8;
+	  padding: 5px 10px;
+	  right: 0;
+	  top: 0;
+	  height: 100%;
+	  color: #666;
+	}
+	#wrapper .form-row {
+	  padding: 10px 0;
+	  display: -webkit-box;
+	  display: -moz-box;
+	  display: -ms-flexbox;
+	  display: -webkit-flex;
+	  display: flex;
+	  justify-content: space-around;
+	}
+	#wrapper .form-row .form-col:last-child {
+	  padding-right: 0;
+	}
+	#wrapper.form-col {
+	  padding-right: 10px;
+	  width: 100%;
+	  overflow: hidden;
+	}
+	.users-list{
+		width:100%;
+		padding:15px;
+		border: 1px solid rgba(0, 0, 0, 0.04);
+		margin-top:20px;
+		overflow-x:scroll;
+	}
+	.users-list table{	
+		background-color:inherit;
+		width:100%;
+	}
+	.users-list table thead{
+		background-color:rgba(0, 0, 0, 0.2);
+	}
+	.users-list table thead th{
+		padding:10px;
+		font-size:16px;
+	}
+	.users-list table tbody{		
+		background-color:#fff;
+	}
+	.users-list table tbody tr:nth-child(even){
+		background-color:rgba(0, 0, 0, 0.07);
+	}
+	.users-list table tbody tr:hover{
+		background-color:rgba(0, 0, 0, 0.3);
+	}
+	.users-list table tbody tr td{
+		padding:8px;
+		font-size:12px;
+	}
+	.active-box{
+		width: 200px;
+		position: relative;
+		border: 1px solid rgba(0, 0, 0, 0.1);
+		-moz-border-radius: 10px;
+		-webkit--radius: 10px;
+		border-radius: 10px;
+		overflow: hidden;	
+	}
+	.active-box .title{
+		position: relative;
+		padding: 5px;
+		display: inline;
+		width:48%;
+		-moz-border-radius: 10px;
+		-webkit--radius: 10px;
+		border-radius: 10px;
+		overflow: hidden;
+		cursor: pointer;
+	}
+	.active-box .title:hover{
+		opacity:0.7
+	}
+	.gr{
+		background-color:green;
+		color:#fff;
+	}
+	.rd{
+		background-color:#DF190C;
+		color:#fff;
+	}
 
 /*--------RESPOSIVE DESIGN-----------*/
 @media only screen and (max-width: 1200px) {
@@ -618,7 +755,24 @@ font-weight: normal; color: #333;}
   #ticks {
     width: 100%; 
   }
-
+  .Acc-details .side-details {
+	 width:100%;
+	 -webkit-flex-basis: 100%;
+     -moz-flex-basis: 100%;
+     -ms-flex-basis: 100%;
+     flex-basis: 100%;
+  }
+  .Acc-details .main-details {
+	 width:100%;
+	 -webkit-flex-basis: 100%;
+     -moz-flex-basis: 100%;
+     -ms-flex-basis: 100%;
+     flex-basis: 100%;
+  }
+  #wrapper h3{
+		margin-left:0px;
+		max-width:100%;
+	}
 }
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {

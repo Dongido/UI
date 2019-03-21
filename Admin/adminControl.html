@@ -5,6 +5,7 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" 
 crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="css/style.css">
+
 </head>
 <body>
 
@@ -69,49 +70,88 @@ crossorigin="anonymous">
       </div>
     </div>
     <hr/>
-    <div id="wrapper">
-      <h3>2019 Monthly Report</h3>
-      <div class="wrapper"> 
-      <table id="q-graph">
-      <thead>
-      <tr>
-      <th></th>
-      <th class="sent">Deposit</th>
-      <th class="paid">Withdrawer</th>
-      </tr>
-      </thead>
-      <tbody>
-      <tr class="qtr" id="q1">
-      <th scope="row">JAN</th>
-      <td class="sent bar" style="height: 111px;"><p>NGN 20,018,450</p></td>
-      <td class="paid bar" style="height: 99px;"><p>NGN 16,500,940</p></td>
-      </tr>
-      <tr class="qtr" id="q2">
-      <th scope="row">FEB</th>
-      <td class="sent bar" style="height: 206px;"><p>NGN 34,340,200</p></td>
-      <td class="paid bar" style="height: 194px;"><p>NGN 27,340,900</p></td>
-      </tr>
-      <tr class="qtr" id="q3">
-      <th scope="row">MAR</th>
-      <td class="sent bar" style="height: 259px;"><p>NGN 43,145,670</p></td>
-      <td class="paid bar" style="height: 193px;"><p>NGN 32,225,905</p></td>
-      </tr>
-      <!--<tr class="qtr" id="q4">
-      <th scope="row">Q4</th>
-      <td class="sent bar" style="height: 110px;"><p>$18,415.96</p></td>
-      <td class="paid bar" style="height: 195px;"><p>$32,425.00</p></td>
-      </tr> -->
-      </tbody>
-      </table>
-
-      <div id="ticks">
-      <div class="tick" style="height: 59px;"><p>N50,000,000</p></div>
-      <div class="tick" style="height: 59px;"><p>N40,000,000</p></div>
-      <div class="tick" style="height: 59px;"><p>N30,000,000</p></div>
-      <div class="tick" style="height: 59px;"><p>N20,000,000</p></div>
-      <div class="tick" style="height: 59px;"><p>N10,000,000</p></div>
-      </div>
-    </div>
+    <div id="wrapper" class="wrap_cont">
+      <div class="filter-box">
+         <div class="form-row">
+             <div class="form-col">
+                <label>Filter By:</label>
+             </div>
+			 <div class="form-col">
+				<div class="sort-box">
+                   <span class="title">Admin</span>
+                   <span class="icon"><input type="radio" name="users" /></span>
+                </div>
+             </div>
+             <div class="form-col">
+                <div class="sort-box">
+                    <span class="title">Staff</span>
+                    <span class="icon"><input type="radio" name="users" /></span>
+                </div>
+             </div>
+             <div class="form-col">
+                <div class="sort-box">
+                    <span class="title">Client</span>
+                    <span class="icon"><input type="radio" name="users" /></span>
+                </div>
+             </div>
+			 <div class="form-col">
+                <div class="active-box">
+					<button type="submit" class="title gr" > Activate </button>
+					<button type="submit" class="title rd" > Deactivate </button>
+                </div>
+             </div>
+          </div>
+       </div>
+	   <div class="users-list">
+			<table>
+				<thead>
+				  <tr>
+					  <th></th>
+					  <th>Name</th>
+					  <th>Branch</th>
+					  <th>Role</th>
+					  <th>Status</th>
+				  </tr>
+				</thead>
+				 <tbody>
+				   <tr>
+						<td><input type="checkbox" name="act" id="action" /></td>
+						<td>Gideon Nweke</td>
+						<td>Ketu Lagos</td>
+						<td>Admin</td>
+						<td>Active</td>
+				   </tr>
+				   <tr>
+				        <td><input type="checkbox" name="act" class="action" /></td>
+						<td>Glory Gabriel</td>
+						<td>Ikeja Lagos</td>
+						<td>Staff</td>
+						<td>Active</td>
+				   </tr>
+				   <tr>
+						<td><input type="checkbox" name="act" class="action" /></td>
+						<td>Daniel Eze</td>
+						<td>Ikorodu Lagos</td>
+						<td>Admin</td>
+						<td>Not-Active</td>
+				   </tr>
+				   <tr>
+						<td><input type="checkbox" name="act" class="action" /></td>
+						<td>Yvonne Okeke</td>
+						<td>Lekki I Lagos</td>
+						<td>Client</td>
+						<td>Active</td>
+				   </tr>
+				   <tr>
+						<td><input type="checkbox" name="act" class="action" /></td>
+						<td>Ayo George</td>
+						<td>Festac Lagos</td>
+						<td>Client</td>
+						<td>Not-Active</td>
+				   </tr>
+				 </tbody>
+			</table>
+	   </div>
     </div> 
   </section>
   
