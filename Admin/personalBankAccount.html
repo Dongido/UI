@@ -61,17 +61,23 @@
                 overflow: hidden;
                 margin: 20px 0;
             }
-                .account-content .item .btn {
+                .account-content  .btn {
                     border: 1px solid rgba(0, 0, 0, 0.1);
                     -moz-border-radius: 50px;
                     -webkit--radius: 50px;
                     border-radius: 50px;
+					padding:10px;
+					background-color: #287AB5;
+					font-weight:600;
+					color:#fff;
                 }
-                    .account-content .item .btn:hover {
-                        color: #fff;
+                    .account-content .btn:hover {
+                        color: #287AB5;
+						background-color: #fff;
+						cursor:pointer;
                     }
 
-                        .account-content .item .btn:hover::before {
+                        .account-content .btn:hover::before {
                             background: #287AB5;
                         }
 
@@ -307,8 +313,9 @@
                                                     </tbody>
                                                 </table>
                                             </div>
-                                        </div>
+                                        </div>										
                                     </div>
+									<button type="submit" class="btn">Delete Account</button>
                         </div>
                     </div>
                     <div class="side-details">
