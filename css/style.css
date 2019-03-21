@@ -52,6 +52,16 @@ hr{
 .fa-user-times{
   color: #F52A45;
 }
+.fa-cash-register{
+	color: #55CC15;
+}
+.fa-file-invoice-dollar{
+	color: #22CBE6;
+}
+.flip{
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+}
 
 .sidebar {
   height: 100%;
@@ -261,6 +271,16 @@ hr{
   float: right;
   font-size: 14px;
   font-weight: 600;
+}
+.overview .item .image span .red{
+  color: #F31526;
+  font-size: 22px;
+}
+.overview .item .desc .red{
+  background-color: #FADFE1;
+  color: #F31526;
+  padding: 2px;
+  border-radius: 8px 8px 8px 8px;
 }
 /*----------dASHBOARD CHART--------------*/
 
