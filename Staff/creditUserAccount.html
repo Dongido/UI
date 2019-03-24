@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+          crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+
+    <div id="mySidebar" class="sidebar">
+        <div class="sidebar_header">
+            <h2>Banka</h2>
+            <h5>Staff Dashboard</h5>
+        </div>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-th-list"></i></a>
+        <a href="dashboard.html"> <i class="far fa-newspaper"></i> Dashboard</a>
+        <h4>Operations</h4>
+        <a href="creditUser.html" class="active"><i class="fas fa-cash-register"></i> Credit User account</a>
+        <a href="debitUser.html"><i class="fas fa-file-invoice-dollar"></i> Debit User account</a>
+        <h4>Bank Account</h4>
+        <a href="bankAccounts.html"><i class="far fa-address-book"></i> View Accounts</a>
+        <a href="deletedAccounts.html"><i class="fas fa-user-times"></i> Deleted accounts</a>
+    </div>
+    <div id="main">
+        <nav id="Top_nav">
+            <div>
+                <span> <i class="user">Grace Ayodele</i> </span>
+                <span class="avatar"><img src="../images/avatar.png">
+                    <ul>
+                      <li><a href="#"><i class="fas fa-plus-square"></i> Create Account</a></li>
+                      <li><a href="#"><i class="fas fa-user-cog"></i> Accounts </a></li>
+                      <li><a href="#"><i class="fas fa-user-lock"></i> Logout </a></li>
+                    </ul>
+                </span>
+                <span> <i class="far fa-bell"></i> </span>
+                <div style="clear:both"></div>
+            </div>
+        </nav>
+        <button class="openbtn" onclick="openNav()"><i class="fas fa-th-list"></i> </button>
+        <section id="content">
+            <div class="overview">
+                <div class="item">
+                    <div class="image">
+                        <span><i class="fas fa-hand-holding-usd green"></i></span>
+                    </div>
+                    <div class="desc">
+                        <span class="label">Account Balance</span>
+                        <span class="value green">8,290,900.80</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image">
+                        <span><i class="fas fa-hand-holding-usd red flip"></i></span>
+                    </div>
+                    <div class="desc">
+                        <span class="label">Total cash inflow</span>
+                        <span class="value red">NGN 10, 409,700</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image">
+                        <span><i class="far fa-money-bill-alt pink"></i></span>
+                    </div>
+                    <div class="desc">
+                        <span class="label">Total cash outflow</span>
+                        <span class="value pink">NGN 1,780,500</span>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div id="wrapper">
+                <h3>Credit Bank Account</h3>
+                <div class="Acc-details">
+                    <div class="main-details">
+                        <div class="credit">
+                            <form>
+                                <fieldset>
+                                    <legend>Account Infomation</legend>
+                                    <div class="form-row">
+                                        <div class="form-col">
+                                            <input type="number" placeholder="Enter Amount" />
+                                        </div>
+                                        <div class="form-col">
+                                            <input type="text" placeholder="Enter Depositor Name" />
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-col">
+                                            <input type="number" placeholder="Enter Phone Number" />
+                                        </div>
+                                        <div class="form-col">
+                                            <button type="submit" class="btn-alt">Process Transaction</button>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                        <div class="account-content">
+                            <div class="item">
+                                <div class="item-header">
+                                    <div>
+                                        <span><strong>Credit</strong></span><span>Transaction History</span>
+                                    </div>
+                                </div>
+                                <div class="item-desc">
+                                    <div class="users-list">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Amount (NGN)</th>
+                                                    <th>Depositor</th>
+                                                    <th>Branch</th>
+                                                    <th>Method</th>
+                                                    <th>phone</th>
+                                                    <th>Date</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>45,000</td>
+                                                    <td>Ayo George</td>
+                                                    <td>Ikeja Lagos</td>
+                                                    <td>cash</td>
+                                                    <td>080000000000</td>
+                                                    <td>2019/03/20, 12:00AM</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1,000,000</td>
+                                                    <td>Dele Samuel</td>
+                                                    <td>Ikorodu Lagos</td>
+                                                    <td>Transfer</td>
+                                                    <td>080000000000</td>
+                                                    <td>2019/03/20, 08:00AM</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>30,000</td>
+                                                    <td>Yvonne Okeke</td>
+                                                    <td>Lekki I Lagos</td>
+                                                    <td>cash</td>
+                                                    <td>080000000000</td>
+                                                    <td>2019/03/19, 03:00PM</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="item-header alt">
+                                    <div>
+                                        <span><strong>Debit</strong></span><span>Transaction History</span>
+                                    </div>
+                                </div>
+                                <div class="item-desc alt">
+                                    <div class="users-list">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Amount</th>
+                                                    <th>Method</th>
+                                                    <th>Branch</th>
+                                                    <th>Date</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>300,500</td>
+                                                    <td>Transfer</td>
+                                                    <td>Festac Lagos</td>
+                                                    <td>2019/03/21, 01:00PM</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>12,000</td>
+                                                    <td>ATM</td>
+                                                    <td>Ikorodu Lagos</td>
+                                                    <td>2019/03/19, 03:00PM</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2,500</td>
+                                                    <td>Recharge</td>
+                                                    <td>Lekki I Lagos</td>
+                                                    <td>2019/03/17, 11:00AM</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="side-details">
+                        <div class="account-filter-box">
+                            <div class="filter-header">
+                                <img src="../images/customer2.png" height="200" width="180" />
+                            </div>
+                            <div class="filter-item-box">
+                                <div class="filter-item-header">
+                                    <h4>Personal Details</h4>
+                                </div>
+                                <div class="filter-item">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>Name </strong></td>
+                                                <td>Grace Ayodele</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Account Number </strong></td>
+                                                <td>7789303892</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>DOB </strong></td>
+                                                <td>Jan 23, 2019</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>State </strong></td>
+                                                <td>Lagos</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Home Address </strong></td>
+                                                <td>Jimoh balogun, Ketu, Lagos</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Next of Kin </strong></td>
+                                                <td>Daniel Ayodele</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="filter-item-box">
+                                <div class="filter-item-header">
+                                    <h4>More Details</h4>
+                                </div>
+                                <div class="filter-title">Total Credit Transaction</div>
+                                <div class="filter-item">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>No. of transfers </strong></td>
+                                                <td>32</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Amount </strong></td>
+                                                <td>6,890,250</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Cash transactions </strong></td>
+                                                <td>49</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Amount </strong></td>
+                                                <td>3,809,983</td>
+                                            </tr>
+                                            <tr>
+                                                <th><strong>Total amount </strong></th>
+                                                <th>10,700,233</th>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="filter-title">Total Debit Transaction</div>
+                                <div class="filter-item">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>No. of transfers </strong></td>
+                                                <td>45</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Amount </strong></td>
+                                                <td>6,890,250</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Cash transactions </strong></td>
+                                                <td>24</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Amount </strong></td>
+                                                <td>3,809,983</td>
+                                            </tr>
+                                            <tr>
+                                                <th><strong>Total amount </strong></th>
+                                                <th>10,700,233</th>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "30px";
+        }
+    </script>
+
+</body>
+</html>
