@@ -514,10 +514,10 @@ font-weight: normal; color: #333;}
     background: #287AB5;
 }
 .account-content .item .item-header {
-    padding: 10px;
-    background: #287AB5;
-    color: #fff;
-width:100%;
+  padding: 10px;
+  background: #287AB5;
+  color: #fff;
+  width:100%;
 }
 .account-content .item .item-header span {
     font-size: 14px;
@@ -525,6 +525,9 @@ width:100%;
 }
 .account-content .item .item-header.alt {
     background: #EE4327;
+}
+.account-content .item .item-header.alts {
+    background: #047720;
 }
 .account-content .item .item-desc {
     padding: 20px 10px;
@@ -607,6 +610,17 @@ display: flex;
     border-radius: 10px 10px 0 0;
     font-size: 14px;
     margin-right: 10px;
+}
+#accounts .tab li.active {
+  background: #fff;
+  color: #000;
+  border-bottom: none;
+  padding-bottom: 1px;
+  margin-bottom: -1px;
+  z-index: 100;
+  -webkit-box-shadow: 0 -5px 10px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 -5px 10px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 -5px 10px 0 rgba(0, 0, 0, 0.1);
 }
 #accounts .accounts {
     display: -webkit-box;
@@ -711,6 +725,10 @@ display: flex;
     -moz-border-radius: 3px;
     -webkit--radius: 3px;
     border-radius: 3px;
+}
+#accounts .form-col input[type=checkbox]{
+  margin-left: 20px;
+  margin-bottom: 10px;
 }
 #accounts .accounts .form-row .form-col textarea {
     height: 60px;
@@ -892,7 +910,7 @@ display: flex;
   border-radius: 0 10px 10px 10px;
 	background-color:none;
 	margin-top:30px;
-	margin-bottom:100px;
+	margin-bottom:50px;
 }
 .credit .form-row {
 	display: -webkit-box;
@@ -915,7 +933,7 @@ display: flex;
 	-ms-flex: 1;
 	flex: 1;
 }
-.credit .form-row .form-col input[type=number], .form-col input[type=text] {
+.credit .form-row .form-col input[type=number], .form-col input[type=text], .form-col input[type=date], .form-row .form-col select {
 	padding: 10px;
 	width: 100%;
 	border: 1px solid rgba(0, 0, 0, 0.05);
