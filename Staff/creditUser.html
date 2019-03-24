@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" 
+crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+
+</head>
+<body>
+
+<div id="mySidebar" class="sidebar">
+  <div class="sidebar_header">
+    <h2>Banka</h2>
+    <h5>Staff Dashboard</h5>
+  </div>
+  
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-th-list"></i></a>
+  <a href="dashboard.html"> <i class="far fa-newspaper"></i> Dashboard</a>
+  <h4>Operations</h4>
+  <a href="creditUser.html" class="active"><i class="fas fa-cash-register"></i> Credit User account</a>
+  <a href="debitUser.html"><i class="fas fa-file-invoice-dollar"></i> Debit User account</a>
+  <h4>Bank Account</h4>
+  <a href="bankAccounts.html"><i class="far fa-address-book"></i> View Accounts</a>
+  <a href="deletedAccounts.html"><i class="fas fa-user-times"></i> Deleted accounts</a>
+
+</div>
+
+<div id="main">
+  <nav id="Top_nav">
+    <div>
+      <span> <i class="user">Grace Ayodele</i> </span>
+      <span class="avatar"><img src="../images/avatar.png">
+      	<ul>
+          <li><a href="#"><i class="fas fa-plus-square"></i> Create Account</a></li>
+          <li><a href="#"><i class="fas fa-user-cog"></i> Accounts </a></li>
+          <li><a href="#"><i class="fas fa-user-lock"></i> Logout </a></li>
+        </ul>
+      </span>
+      <span> <i class="far fa-bell"></i> </span>     
+      <div style="clear:both"></div>
+    </div>
+  </nav>
+
+  <button class="openbtn" onclick="openNav()"><i class="fas fa-th-list"></i> </button>  
+  
+  <section id="content">
+    <div class="overview">
+      <div class="item">
+        <div class="image">
+          <span><i class="fas fa-hand-holding-usd green"></i></span>
+        </div>
+        <div class="desc">
+          <span class="label">Credit Amount</span>
+          <span class="value green">1,890,200</span>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="image">
+          <span><i class="fas fa-hand-holding-usd red flip"></i></span>
+        </div>
+        <div class="desc">
+          <span class="label">Debit Amount</span>
+          <span class="value red">NGN 409,700</span>
+        </div>
+      </div>
+      <div class="item">
+        <div class="image">
+          <span><i class="far fa-money-bill-alt pink"></i></span>
+        </div>
+        <div class="desc">
+          <span class="label">Total Income</span>
+          <span class="value pink">NGN 1,480,500</span>
+        </div>
+      </div>
+    </div>
+    <hr/>
+    <div id="wrapper">		
+		<div class="credit"> 
+			<h3>Credit User Account</h3>
+			<form action="creditUserAccount.html"><!--This will be improved later -->
+				<fieldset>
+					<legend>Account Infomation</legend>
+					<div class="form-row">
+						<div class="form-col">
+							<input type="number" placeholder="Enter Account Number" />
+						</div>
+						<div class="form-col">
+							<button type="submit" class="btn-alt">Proceed Transaction</button>
+						</div>
+					</div>
+				</fieldset>
+			</form>
+		</div><hr>
+		<label>Recent completed Transactions</label>
+		<div class="completed-trasact">	
+			<div class="item">
+				<a href="#"><div class="item-cont">
+					<span><i class="fas fa-check"></i> </span>
+					<h4>NGN 340,500<h4>
+					<h6 class="lt">7789200292</h6>
+					<h6 class="rt">22/03/2019, 03:01AM</h6>
+				</div> </a>
+			</div>
+			<div class="item">
+				<a href="#"><div class="item-cont">
+					<span><i class="fas fa-check green"></i> </span>
+					<h4>NGN 50,000<h4>
+					<h6 class="lt">7789200292</h6>
+					<h6 class="rt">22/03/2019, 03:01AM</h6>
+				</div> </a>
+			</div>
+			<div class="item">
+				<a href="#"><div class="item-cont">
+					<span><i class="fas fa-check green"></i> </span>
+					<h4>NGN 8,940,000<h4>
+					<h6 class="lt">7789200292</h6>
+					<h6 class="rt">22/03/2019, 03:01AM</h6>
+				</div> </a>
+			</div>
+			<div class="item">
+				<a href="#"><div class="item-cont">
+					<span><i class="fas fa-check green"></i> </span>
+					<h4>NGN 150,000<h4>
+					<h6 class="lt">7789200292</h6>
+					<h6 class="rt">22/03/2019, 03:01AM</h6>
+				</div> </a>
+			</div>
+			<div class="item">
+				<a href="#"><div class="item-cont">
+					<span><i class="fas fa-check green"></i> </span>
+					<h4>NGN 14,500<h4>
+					<h6 class="lt">7789200292</h6>
+					<h6 class="rt">22/03/2019, 03:01AM</h6>
+				</div> </a>
+			</div>
+		</div>
+    </div> 
+  </section>
+  
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "30px";
+}
+</script>
+   
+</body>
+</html> 
