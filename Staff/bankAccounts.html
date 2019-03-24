@@ -18,10 +18,10 @@ crossorigin="anonymous">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-th-list"></i></a>
   <a href="dashboard.html"> <i class="far fa-newspaper"></i> Dashboard</a>
   <h4>Operations</h4>
-  <a href="#"><i class="fas fa-cash-register"></i> Credit User account</a>
-  <a href="#"><i class="fas fa-file-invoice-dollar"></i> Debit User account</a>
+  <a href="creditUser.html"><i class="fas fa-cash-register"></i> Credit User account</a>
+  <a href="debitUser.html"><i class="fas fa-file-invoice-dollar"></i> Debit User account</a>
   <h4>Bank Account</h4>
-  <a href="bankAccounts.html"><i class="far fa-address-book"></i> View Accounts</a>
+  <a href="bankAccounts.html" class="active"><i class="far fa-address-book"></i> View Accounts</a>
   <a href="deletedAccounts.html"><i class="fas fa-user-times"></i> Deleted accounts</a>
 
 </div>
@@ -30,7 +30,13 @@ crossorigin="anonymous">
   <nav id="Top_nav">
     <div>
       <span> <i class="user">Grace Ayodele</i> </span>
-      <span class="avatar"><img src="../images/avatar.png"></span>
+      <span class="avatar"><img src="../images/avatar.png">
+        <ul>
+          <li><a href="#"><i class="fas fa-plus-square"></i> Create Account</a></li>
+          <li><a href="#"><i class="fas fa-user-cog"></i> Accounts </a></li>
+          <li><a href="#"><i class="fas fa-user-lock"></i> Logout </a></li>
+        </ul>
+      </span>
       <span> <i class="far fa-bell"></i> </span>     
       <div style="clear:both"></div>
     </div>
