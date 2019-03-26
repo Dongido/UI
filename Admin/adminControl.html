@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" 
-crossorigin="anonymous">
-<link rel="stylesheet" type="text/css" href="../css/style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+          crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <title>Banka, World's No. 1 Bank</title>
 </head>
 <body>
 
@@ -22,7 +23,6 @@ crossorigin="anonymous">
   <a href="adminControl.html" class="active"><i class="fas fa-user-slash"></i> Activate/Deactivate User</a>
   <h4>Bank Account</h4>
   <a href="bankAccounts.html"><i class="far fa-address-book"></i> View Accounts</a>
-  <a href="deletedAccounts.html"><i class="fas fa-user-times"></i> Deleted accounts</a>
 
 </div>
 
@@ -34,7 +34,7 @@ crossorigin="anonymous">
         <ul>
           <li><a href="#"><i class="fas fa-plus-square"></i> Create Account</a></li>
           <li><a href="#"><i class="fas fa-user-cog"></i> Accounts </a></li>
-          <li><a href="#"><i class="fas fa-user-lock"></i> Logout </a></li>
+          <li><a href="../signIn.html"><i class="fas fa-user-lock"></i> Logout </a></li>
         </ul>
       </span>
       <span> <i class="far fa-bell"></i> </span>     
@@ -85,25 +85,25 @@ crossorigin="anonymous">
 			 <div class="form-col">
 				<div class="sort-box">
                    <span class="title">Admin</span>
-                   <span class="icon"><input type="radio" name="users" /></span>
+                   <span class="icon"><input type="radio" name="users" value="Admin" /></span>
                 </div>
              </div>
              <div class="form-col">
                 <div class="sort-box">
                     <span class="title">Staff</span>
-                    <span class="icon"><input type="radio" name="users" /></span>
+                    <span class="icon"><input type="radio" name="users" value="Staff" /></span>
                 </div>
              </div>
              <div class="form-col">
                 <div class="sort-box">
                     <span class="title">Client</span>
-                    <span class="icon"><input type="radio" name="users" /></span>
+                    <span class="icon"><input type="radio" name="users" value="Client" /></span>
                 </div>
              </div>
 			 <div class="form-col">
                 <div class="active-box">
 					<button type="submit" class="title gr" > Activate </button>
-					<button type="submit" class="title rd" > Deactivate </button>
+					<button type="submit" class="title rd" > Dormant </button>
                 </div>
              </div>
           </div>
@@ -139,7 +139,7 @@ crossorigin="anonymous">
 						<td>Daniel Eze</td>
 						<td>Ikorodu Lagos</td>
 						<td>Admin</td>
-						<td>Not-Active</td>
+						<td>Craft</td>
 				   </tr>
 				   <tr>
 						<td><input type="checkbox" name="act" class="action" /></td>
@@ -153,7 +153,7 @@ crossorigin="anonymous">
 						<td>Ayo George</td>
 						<td>Festac Lagos</td>
 						<td>Client</td>
-						<td>Not-Active</td>
+						<td>Craft</td>
 				   </tr>
 				 </tbody>
 			</table>

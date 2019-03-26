@@ -165,3 +165,31 @@ label {
     margin-bottom: 5px;
     font-weight: 700;
 }
+.inputAvatar {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.inputAvatar + label {
+    font-size: 1.15em;
+    font-weight: 700;
+    color: #287AB5;
+    background-color: #eee;
+    display: inline-block;
+    padding: 5px;
+}
+
+.inputAvatar:focus + label,
+.inputAvatar + label:hover {
+    background-color: #000;
+}
+.inputAvatar + label {
+  cursor: pointer; /* "hand" cursor */
+}
+.inputAvatar:focus + label {
+  outline: 1px dotted #818181;
+  outline: -webkit-focus-ring-color auto 5px;
+}

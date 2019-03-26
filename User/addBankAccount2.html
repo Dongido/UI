@@ -31,7 +31,7 @@
                     <ul>
                         <li><a href="#"><i class="fas fa-plus-square"></i> Create Account</a></li>
                         <li><a href="#"><i class="fas fa-user-cog"></i> Accounts </a></li>
-                        <li><a href="#"><i class="fas fa-user-lock"></i> Logout </a></li>
+                        <li><a href="../signIn.html"><i class="fas fa-user-lock"></i> Logout </a></li>
                     </ul>
                 </span>
                 <span> <i class="far fa-bell"></i> </span>
@@ -59,8 +59,6 @@
                                 <li>Account Information</li>
                                 <li>Personal Information</li>
                                 <li class="active">Contact Details</li>
-                                <li>ID type</li>
-                                <li>Account Services</li>
                             </ul>
                             <div class="accounts-tab">
                                 <form action="addBankAccount3.html"><!--This will be improved later -->
@@ -69,37 +67,34 @@
                                             <div class="form-col">
                                                 <label>State</label>
                                                 <select>
-                                                    <option>Select State</option>
+                                                    <option disabled selected>Select State</option>
                                                     <option>Rivers</option>
                                                     <option>Lagos</option>
+                                                    <option>Oyo</option>
                                                 </select>
                                             </div>
                                             <div class="form-col">
                                                 <label>L.G.A</label>
                                                 <select>
-                                                    <option>Select State</option>
-                                                    <option>Etche</option>
-                                                </select>
-                                            </div>
-                                            <div class="form-col">
-                                                <label>City/Town</label>
-                                                <select>
-                                                    <option>Select City</option>
-                                                    <option>PHC</option>
+                                                    <option disabled selected>Select LGA</option>
+                                                    <option>Port Harcourt</option>
+                                                    <option>Ikeja</option>
+                                                    <option>Ibadan</option>
                                                 </select>
                                             </div>
                                         </div>
                                         <div class="form-row">
                                             <div class="form-col">
-                                                <label>Email ID</label>
-                                                <input type="text" />
+                                                <label>City/Town</label>
+                                                <select>
+                                                    <option disabled selected>Select City</option>
+                                                    <option>PHC</option>
+                                                    <option>Lekki phase 1</option>
+                                                    <option>Iwo</option>
+                                                </select>
                                             </div>
                                             <div class="form-col">
-                                                <label>Phone No (1)</label>
-                                                <input type="text" />
-                                            </div>
-                                            <div class="form-col">
-                                                <label>Phone No (2)</label>
+                                                <label>Phone Number</label>
                                                 <input type="text" />
                                             </div>
                                         </div>
@@ -112,7 +107,7 @@
                                         <div class="form-row">
                                             <div class="form-col">
                                                 <a href="javascript:history.go(-1)" class="title" style="text-decoration: none;"> Go Back </a>
-                                                <button type="submit" class="title">Next Step</button>
+                                                <button type="submit" class="title">Create Account</button>
                                             </div>
                                         </div>
 

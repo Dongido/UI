@@ -9,7 +9,6 @@
     <title>Banka, World's No. 1 Bank</title>
 </head>
 <body>
-
     <div id="mySidebar" class="sidebar">
         <div class="sidebar_header">
             <h2>Banka</h2>
@@ -22,7 +21,6 @@
         <a href="addBankAccount.html" class="active"><i class="fas fa-user-plus"></i> Create Bank Account</a>
         <a href="history.html"><i class="fas fa-history"></i> Account History</a>
     </div>
-
     <div id="main">
         <nav id="Top_nav">
             <div>
@@ -31,7 +29,7 @@
                     <ul>
                         <li><a href="#"><i class="fas fa-plus-square"></i> Create Account</a></li>
                         <li><a href="#"><i class="fas fa-user-cog"></i> Accounts </a></li>
-                        <li><a href="#"><i class="fas fa-user-lock"></i> Logout </a></li>
+                        <li><a href="../signIn.html"><i class="fas fa-user-lock"></i> Logout </a></li>
                     </ul>
                 </span>
                 <span> <i class="far fa-bell"></i> </span>
@@ -59,89 +57,40 @@
                                 <li>Account Information</li>
                                 <li class="active">Personal Information</li>
                                 <li>Contact Details</li>
-                                <li>ID type</li>
-                                <li>Account Services</li>
                             </ul>
                             <div class="accounts-tab">
                                 <form action="addBankAccount2.html"><!--This will be improved later -->
                                     <fieldset>
                                         <div class="form-row">
                                             <div class="form-col">
-                                                <label>Surname</label>
-                                                <input type="text" />
-                                            </div>
-                                            <div class="form-col">
-                                                <label>First Name</label>
-                                                <input type="text" />
-                                            </div>
-                                            <div class="form-col">
-                                                <label>Middle Name</label>
-                                                <input type="text" />
-                                            </div>
-                                        </div>
-                                        <div class="form-row">
-                                            <div class="form-col">
                                                 <label>Marital Status</label>
                                                 <select>
-                                                    <option>Select Marital Status</option>
+                                                    <option disabled selected>Select Marital Status</option>
                                                     <option>Single</option>
                                                     <option>Married</option>
+                                                    <option>Divorced</option>
                                                 </select>
                                             </div>
                                             <div class="form-col">
                                                 <label>Gender</label>
                                                 <select>
-                                                    <option>Select Gender</option>
+                                                    <option disabled selected>Select Gender</option>
                                                     <option>Male</option>
                                                     <option>Female</option>
                                                 </select>
                                             </div>
-                                            <div class="form-col">
-                                                <label>DOB</label>
-                                                <input type="text" />
-                                            </div>
-                                        </div>
-                                         <div class="form-row">
-                                            <div class="form-col">
-                                                <label>Nationality (for none nigerian)</label>
-                                                <select>
-                                                    <option>Select Country</option>
-                                                    <option>United States of America</option>
-                                                </select>
-                                            </div>
-                                            <div class="form-col">
-                                                <label>Resident Permit Number</label>
-                                                <input type="text" />
-                                            </div>
                                         </div>
                                         <div class="form-row">
                                             <div class="form-col">
-                                                <label>State of Origin</label>
-                                                <select>
-                                                    <option>Select State</option>
-                                                    <option>Rvers</option>
-                                                    <option>Lagos</option>
-                                                </select>
-                                            </div>
-                                            <div class="form-col">
-                                                <label>L.G.A</label>
-                                                <select>
-                                                    <option>Select LGA</option>
-                                                    <option>Etche</option>
-                                                </select>
+                                                <label>DOB</label>
+                                                <input type="date" />
                                             </div>
                                             <div class="form-col">
                                                 <label>Religion</label>
                                                 <input type="text" />
                                             </div>
-                                        </div>
-                                        <div class="form-row">
                                             <div class="form-col">
-                                                <label>Tax Identification Number</label>
-                                                <input type="text" />
-                                            </div>
-                                            <div class="form-col">
-                                                <label>Employee Identification Number</label>
+                                                <label>Next of Kin</label>
                                                 <input type="text" />
                                             </div>
                                         </div>
@@ -160,8 +109,6 @@
                 </div>
             </div>
         </section>
-
-
     </div>
 
     <script>
