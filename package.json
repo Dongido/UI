@@ -1,0 +1,22 @@
+{
+  "name": "ui",
+  "version": "1.0.0",
+  "description": "banka \u001b[D is a banking application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dongido/UI.git"
+  },
+  "author": "gideon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dongido/UI/issues"
+  },
+  "homepage": "https://github.com/Dongido/UI#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
